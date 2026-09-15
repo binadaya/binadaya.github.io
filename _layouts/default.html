@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="icon" href="{{ '/assets/images/logo-binadaya.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo-binadaya.png' | relative_url }}" alt="PT. Binadaya Inti Dinamika"></a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="{{ '/' | relative_url }}">Beranda</a>
+        <a href="{{ '/tentang/' | relative_url }}">Tentang</a>
+        <a href="{{ '/layanan/' | relative_url }}">Layanan</a>
+        <a href="{{ '/proyek/' | relative_url }}">Proyek</a>
+        <a href="{{ '/kontak/' | relative_url }}">Kontak</a>
+      </nav>
+    </div>
+  </header>
+  <main>{{ content }}</main>
+  <footer>
+    <div class="shell footer-grid">
+      <div><img src="{{ '/assets/images/logo-binadaya.png' | relative_url }}" alt="BINADAYA"><p>Mitra konsultansi profesional untuk solusi strategis dan dampak terukur.</p></div>
+      <div><h3>Navigasi</h3><a href="{{ '/tentang/' | relative_url }}">Profil Perusahaan</a><a href="{{ '/layanan/' | relative_url }}">Layanan</a><a href="{{ '/proyek/' | relative_url }}">Pengalaman</a></div>
+      <div><h3>Hubungi Kami</h3><p>Untuk informasi kerja sama dan kebutuhan konsultansi, silakan gunakan halaman kontak.</p><a href="{{ '/kontak/' | relative_url }}">Buka halaman kontak →</a></div>
+    </div>
+    <div class="shell copyright">© {{ 'now' | date: '%Y' }} PT. Binadaya Inti Dinamika.</div>
+  </footer>
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>
+

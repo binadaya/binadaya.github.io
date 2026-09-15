@@ -1,0 +1,24 @@
+title: PT. Binadaya Inti Dinamika
+description: Perusahaan konsultan profesional di bidang manajemen, teknologi informasi, tata ruang, infrastruktur, lingkungan, dan pengembangan wilayah.
+lang: id-ID
+url: ""
+baseurl: ""
+permalink: pretty
+markdown: kramdown
+collections:
+  projects:
+    output: false
+  services:
+    output: false
+  team:
+    output: false
+  clients:
+    output: false
+  certificates:
+    output: false
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+
